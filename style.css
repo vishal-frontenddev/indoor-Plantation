@@ -1,0 +1,835 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: poppins;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* header start*/
+
+header {
+    height: auto;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.header-top {
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.183);
+}
+.header-main {
+    height: 100%;
+    width: 80%;
+    
+    display: flex;
+    justify-content: space-between;
+}
+.header-right {
+    height: 24px;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    
+    margin-top: 10px;
+    font-size: 12px;
+}
+.header-left {
+    height: 44px;
+    width: 20%;
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 15px;
+}
+
+/* middle-header start */
+
+.middle-header {
+    height: 120px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+   
+    border-bottom: 1px solid rgba(0, 0, 0, 0.183);
+}
+.middle-header-main {
+    height: 100%;
+    width: 80%;
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo {
+    width: 150px;
+    height: 30px;
+    background-image: url(https://leafylife-workdo.myshopify.com/cdn/shop/files/logo.png?v=1714624552);
+    background-size: cover;
+}
+.search {
+    /* background-color: green; */
+    height: 45px;
+    width: 500px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    border-left: 1px solid rgba(0, 0, 0, 0.183);
+    border-right: 1px solid rgba(0, 0, 0, 0.183);
+    border-top: 1px solid rgba(0, 0, 0, 0.183);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.183);
+   
+}
+.search-opt {
+    width: 60%;
+    border-radius: 20px;
+    padding: 8px 10px;
+    border: none;
+    outline: none;
+}
+.search i {
+    font-size: 18px;
+    padding-right: 20px;
+}
+.favourite {
+    height: 120px;
+    width: 210px;
+    border-left: 1px solid rgba(0, 0, 0, 0.183);
+    border-right: 1px solid rgba(0, 0, 0, 0.183);
+    font-size: 22px;
+}
+
+.button {
+    padding-right: 14px;
+}
+.button i {
+    font-size: 20px;
+}
+.favourite {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+/* bottom-header start */
+
+.bottom-header {
+    height: 55px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.183);
+}
+.bottom-header-main {
+    height: 100%;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+} 
+
+.categories {
+    width: 200px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-weight: 500;
+    border-right: 1px solid rgba(0, 0, 0, 0.183);
+}
+.bottom-header-middle {
+    height: 100%;
+    width: 430px;
+    font-size: 16px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    transition: all 25s ease;
+}
+.bottom-header-middle a {
+    color: #3a3636;
+}
+.bottom-header-middle p:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+.bottom-header-left {
+    width: 230px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+}
+
+/* page1 start */
+
+.page1 {
+    height: 100vh;
+    width: 100%;
+    background-image: url(https://leafylife-workdo.myshopify.com/cdn/shop/files/banner2.png?v=1714624585);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    padding-left: 100px;
+    overflow-x: hidden;
+    position: relative;
+}
+.page1-main {
+    height: auto;
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+}
+.page1-main h2 {
+    font-size: 20px;
+}
+.page1-main h1 {
+    font-size: 55px;
+    font-weight: 700;
+}
+.page1-main p {
+    font-size: 15px;
+    font-weight: 430;
+}
+.action-btn {
+    display: flex;
+    gap: 1rem;
+}
+.action-btn button {
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    padding: 12px 20px;
+    outline: none;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+}
+.shop-now {
+    background-color: #399918;
+    color: rgba(255, 255, 255, 0.863);
+    transition: 0.20s;
+}
+.shop-now:hover{
+    background-color: #389918cc;
+}
+
+
+/* page2 start */
+
+.page2 {
+    height: 260px;
+    width: 100%;
+    background-color: #163020;
+    display: flex;
+    justify-content: center;
+    overflow-x: hidden;
+}
+.page2-main {
+    height: 100%;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.box {
+    width: 500px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+}
+.box-cont {
+    height: 100%;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.image-box {
+    height: auto;
+    width: 80px;
+    display: flex;
+    justify-content: center;
+}
+.image-box img {
+    height: auto;
+    width: 63px;
+}
+.image-box img {
+    transition: all 1s;
+}
+.image-box:hover img {
+    transform:  rotateY(180deg);
+}
+
+.content{
+    height: 120px;
+    width: 300px;
+    padding-top: 20px;
+    margin-left: 25px;
+}
+.content h1 {
+    font-size: 17px;
+    color: azure;
+}
+.content p {
+    font-size: 16px;
+    color: azure;
+}
+
+
+/* page3-start */
+
+.page3 {
+    overflow-x: hidden;
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    overflow-x: hidden;
+}
+.page3-column {
+    height: 100%;
+    width: 33%;
+    position: relative;
+    overflow: hidden;
+}
+
+.page3-column img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: .3s;
+}
+
+.page3-column img:hover {
+    transform: scale(1.1);
+    filter: blur(1px);
+}
+.row {
+    width: 100%;
+    height: 50%;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    overflow: hidden;
+    transition: all 30s ease;
+}
+.flower-image {
+    height: 100%;
+    width: 48%;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn{
+    background-color: #399918;
+    padding: 8px 16px;
+    position: absolute;
+    z-index: 1000;
+    bottom: 25px;
+    left: 15px;
+} 
+.btn a  {
+    color:  rgba(255, 255, 255, 0.863);
+}
+.btn {
+    background-color: #399918;
+    color: rgba(255, 255, 255, 0.863);
+    transition: 0.20s;
+}
+.btn:hover{
+    background-color: #389918cc;
+}
+
+.flower-image:hover img {
+    transform: scale(1.2);
+    filter: blur(1px);
+}
+.row2 {
+    width: 100%;
+    height: 49%;
+   
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+/* page4-start */
+
+.page4 {
+    height: auto;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    overflow-x: hidden;
+}
+.page4-main {
+    height: 100%;
+    width: 90%;
+    margin: 20px 0;
+}
+.page4-header {
+    height: 70px;
+    width: 100%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.line {
+    width: 100px;
+    height: 3px;
+    background-color: green;
+    margin-right: 25px;
+    margin-left: 25px;
+}
+.sec-header {
+    height: 70px;
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    margin-bottom: 40px;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.sec-header-box {
+    height: 50px;
+    width: 110px;
+    border: 2px solid #399918   ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.20s;
+    cursor: pointer;
+}
+.sec-header-box:hover{
+    background: #399918;
+    color: rgba(255, 255, 255, 0.788);
+}
+.page4-container {
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.page4-box{
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+ 
+.page4_box_img {
+    width: 100%;
+    overflow: hidden;
+}
+
+.page4_box_img img {
+    width: 100%;
+    transition: all .2s;
+}
+
+.page4-box:hover img {
+    transform: scale(1.1);
+}
+
+.page4-container1 {
+    width: 100%;
+    height: 350px;
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.page4-container h2 {
+    font-size: 15px;
+    color: green;
+}
+.page4-container1 h2 {
+    font-size: 15px;
+    color: green;
+}
+
+/* page5-start */
+
+.page5 {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    overflow-x: hidden;
+}
+.page5-main {
+    height: 100%;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+}
+.page5-row {
+    height: 47%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    overflow: hidden;
+}
+.page5-box {
+    height: 100%;
+    width: 50%;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.page5-box img {
+   
+    transition: 1s;
+}
+.page5-box:hover img {
+    transform: scale(1.2);
+} 
+
+.page5-box p {
+    font-size: 14px;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.page5-box h1 {
+    text-align: center;
+    font-size: 50px;
+}
+.arrow1{
+    background-color: #399918;
+    padding: 8px 16px;
+    border-radius: 10px;
+} 
+.arrow1 a  {
+    color:  rgba(255, 255, 255, 0.863);
+}
+.arrow1{
+    background-color: #399918;
+    color: rgba(255, 255, 255, 0.863);
+    transition: 0.20s;
+}
+.arrow1:hover{
+    background-color: #389918cc;
+}
+
+
+
+/* page6-start */
+
+.page6 {
+    height: auto;
+    width: 100%;
+    background-color: #b6c4b61a;
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+    overflow-x: hidden;
+}
+.page6-main {
+    height: 100%;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px 0;
+}
+.page6-header {
+    height: 110px;
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.page6-header p {
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+}
+.page6-header h1 {
+    font-size: 45px;
+    font-weight: 500;
+}
+.page6-sec-header {
+    height: 30px;
+    width: 500px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+.page6-sec-header h2:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+.page6-sec-header h2 {
+    font-size: 16px;
+    font-weight: 500;
+}
+.page6-row {
+    height: auto;
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+.page6-box {
+    width: 350px;
+    border: 2px solid rgba(0, 0, 0, 0.201);
+}
+
+.page6-image{
+    display: flex;
+    width: 100%;
+    height: 274px;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 20px;
+}
+.image1{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.image2{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    z-index: 0;
+}
+.page6-image:hover .image1{
+    opacity: 0;
+}
+.page6-content {
+    margin-left: 10px;
+}
+.page6-content h1 {
+    font-size: 18px;
+    font-weight: 600;
+}
+.page6-content p {
+    font-size: 13px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    font-weight: 400;
+}
+.page6-content h2 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 8px;
+}
+.page6-content i {
+    font-size: 12px;
+}
+
+.arrow{
+    background-color: #399918;
+    padding: 8px 16px;
+    border-radius: 10px;
+    margin-top: 30px;
+} 
+.arrow a  {
+    color:  rgba(255, 255, 255, 0.863);
+}
+.arrow{
+    background-color: #399918;
+    color: rgba(255, 255, 255, 0.863);
+    transition: 0.20s;
+}
+.arrow:hover{
+    background-color: #389918cc;
+}
+
+
+
+
+
+/* page7-start */
+
+.page7 {
+    height: auto;
+    width: 100%;
+    background-image: url(https://leafylife-workdo.myshopify.com/cdn/shop/files/testi-bg.png?v=1714640686);
+    background-size: cover;
+    background-position: center;
+    margin-top: 50px;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    overflow-x: hidden;
+}
+.page7-main {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px 0;
+}
+.page7-header {
+    height: 108px;
+    width: 550px;
+}
+.page7-header h1 {
+    text-align: center;
+    margin-bottom: 10px;
+    color: white;
+}
+.page7-header p {
+    font-size: 14px;
+    text-align: center;
+    color: white;
+}
+.page7-row {
+    height: auto;
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.page7-box {
+    height: 280px;
+    width: 350px;
+    background-color: rgba(255, 255, 255, 0.849);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.page7-box p {
+    font-size: 13px;
+    text-align: center;
+    margin-top: 20px;
+} 
+.page7-box-header {
+    height: 20px;
+    width: 100px;
+   
+    margin-top: 20px;
+}
+.page7-box-header i {
+    font-size: 12px;
+}
+.page7-image {
+    height: 60px;
+    width: 60px;
+    border-radius: 50px;
+    margin-top: 10px;
+   
+}
+.page7-image img {
+    height: 100%;
+    width: 100%;
+}
+
+
+
+
+
+/* page8-start */
+
+.page8 {
+   height: auto; 
+   width: 100%;
+   background-color: #b6c4b63d;
+   padding-top: 50px;
+   display: flex;
+   justify-content: center;
+   overflow-x: hidden;
+}
+.page8-main {
+    width: 90%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.282); 
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+.page8-box {
+    width: 350px;
+}
+.page8-box p:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.page8-box p {
+    font-size: 14px;
+    margin: 20px 0px;
+}
+.page8-box h2 {
+    font-size: 18px;
+    font-weight: 600;
+}
+.social-media {
+    height: 30px;
+    width: 150px;
+    display: flex;
+    gap: 10px;
+  
+}
+.social-media i {
+    font-size: 20px;
+}
+
+
+
+.copyright {
+    padding: 20px 0px;
+}
+
+.copyright p {
+    text-align: center;
+}
+
